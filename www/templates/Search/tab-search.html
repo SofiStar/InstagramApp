@@ -1,0 +1,15 @@
+<ion-view >
+	<ion-nav-title>
+		</ion-nav-title>
+	<ion-nav-buttons class="button-bar">
+			<a nav-direction="none" class="button button-icon icon ion-ios-search-strong" href="#/tab/search-top"></a>
+			<a nav-direction="none" class="button button-clear button-light" href="#/tab/search-top">Search</a>
+	</ion-nav-buttons>
+	<ion-content ng-init="loadImages()">
+		<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+		</ion-refresher>
+		
+  </ion-content>
+</ion-view>
